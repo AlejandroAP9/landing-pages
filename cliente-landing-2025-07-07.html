@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>undefined - undefined</title>
-    <meta name="description" content="undefined">
+    <title>¡Descubre El Secreto Dulce Que Eleva Tus Sentidos Al Nivel Máximo! - Sugar Boom</title>
+    <meta name="description" content="Conos trufados únicos inspirados en videojuegos, para transformar tu antojo en una experiencia épica.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -100,21 +100,6 @@
             overflow: hidden;
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
         .cta-button:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(255, 45, 146, 0.4);
@@ -151,32 +136,11 @@
             }
         }
 
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
         /* 📈 BENEFICIOS SECTION */
         .beneficios {
             background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             padding: 100px 0;
             position: relative;
-        }
-
-        .beneficios::before {
-            content: '';
-            position: absolute;
-            top: -50px;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(to bottom, #000000, transparent);
         }
 
         .beneficios h2 {
@@ -213,24 +177,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .beneficio-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(45deg, #ff2d92, #ffb347);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .beneficio-item:hover::before {
-            transform: scaleX(1);
         }
 
         .beneficio-item:hover {
@@ -297,23 +243,6 @@
             border-radius: 15px;
             border-left: 5px solid #ff2d92;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .caracteristica-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 45, 146, 0.05), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .caracteristica-item:hover::before {
-            left: 100%;
         }
 
         .caracteristica-item:hover {
@@ -347,18 +276,6 @@
             position: relative;
         }
 
-        .testimonios::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-        }
-
         .testimonios .container {
             position: relative;
             z-index: 2;
@@ -368,19 +285,6 @@
             text-align: center;
             font-size: clamp(2rem, 4vw, 3rem);
             margin-bottom: 60px;
-            position: relative;
-        }
-
-        .testimonios h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 2px;
         }
 
         .testimonios-grid {
@@ -396,17 +300,6 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .testimonio-item::before {
-            content: '"';
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-size: 4rem;
-            color: rgba(255, 255, 255, 0.2);
-            font-family: serif;
         }
 
         .testimonio-item:hover {
@@ -419,7 +312,6 @@
             line-height: 1.6;
             margin-bottom: 20px;
             font-style: italic;
-            padding-top: 20px;
         }
 
         .testimonio-item .author {
@@ -473,10 +365,6 @@
             transition: all 0.3s ease;
         }
 
-        .faq-item:hover {
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
         .faq-question {
             padding: 25px;
             background: #333;
@@ -523,16 +411,6 @@
             padding: 100px 0;
             text-align: center;
             position: relative;
-        }
-
-        .cta-final::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 70% 80%, rgba(255, 45, 146, 0.1) 0%, transparent 70%);
         }
 
         .cta-final .container {
@@ -609,63 +487,200 @@
                 font-size: 1rem;
             }
         }
-
-        /* 🎨 SCROLL ANIMATIONS */
-        .scroll-animation {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .scroll-animation.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
     </style>
 </head>
 <body>
     <!-- 🎯 HERO SECTION -->
     <section class="hero">
         <div class="container">
-            <h1>undefined</h1>
-            <p class="subtitle">undefined</p>
-            <p class="description">undefined</p>
-            <a href="#contact" class="cta-button">¡Quiero comenzar ahora!</a>
+            <h1>¡Descubre El Secreto Dulce Que Eleva Tus Sentidos Al Nivel Máximo!</h1>
+            <p class="subtitle">Conos trufados únicos inspirados en videojuegos, para transformar tu antojo en una experiencia épica.</p>
+            <p class="description">Conos trufados con niveles al estilo videojuego, combinando sabores exclusivos y texturas variadas que ofrecen una experiencia multisensorial única.</p>
+            <a href="#contact" class="cta-button">¡Quiero Mi Cono Nivel Pro Ahora!</a>
             
             <div class="hero-image">
-                <img src="undefined" alt="undefined" loading="lazy" />
+                <img src="https://replicate.delivery/yhqm/vzxwokFbg7YsBFa5QIubkBkVNMIeHn1PPcSpVuguYfR08IepA/out-0.png" alt="¡Descubre El Secreto Dulce Que Eleva Tus Sentidos Al Nivel Máximo!" loading="lazy" />
             </div>
         </div>
     </section>
 
     <!-- 📈 BENEFICIOS SECTION -->
     
+    <section class="beneficios">
+        <div class="container">
+            <h2>¿Por qué elegir Sugar Boom?</h2>
+            <div class="beneficios-grid">
+                
+                    <div class="beneficio-item">
+                        <span class="icon">🎮</span>
+                        <h3>Sabor Nivel PRO</h3>
+                        <p>Experimenta sabores intensos y variados con hasta 4 tipos de rellenos exclusivos en cada cono, especialmente diseñados para provocar adrenalina gustativa.</p>
+                    </div>
+                
+                    <div class="beneficio-item">
+                        <span class="icon">🍫</span>
+                        <h3>Endulzamiento Perfecto</h3>
+                        <p>Cada porción contiene 250 calorías balanceadas para que disfrutes sin culpa y mantengas energía todo el día.</p>
+                    </div>
+                
+                    <div class="beneficio-item">
+                        <span class="icon">✨</span>
+                        <h3>Texturas que Enamoran</h3>
+                        <p>Combina hasta 3 texturas distintas –cremoso, crujiente y suave– para una experiencia multisensorial impresionante.</p>
+                    </div>
+                
+                    <div class="beneficio-item">
+                        <span class="icon">🚀</span>
+                        <h3>Entrega Rápida y Segura</h3>
+                        <p>Recibe tu pedido en menos de 48 horas en todo el país con embalaje especial que garantiza frescura y presentación impecable.</p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
 
     <!-- 🚀 CARACTERÍSTICAS SECTION -->
+    
+    <section class="caracteristicas">
+        <div class="container">
+            <h2>Características Principales</h2>
+            <div class="caracteristicas-grid">
+                
+                    <div class="caracteristica-item">
+                        <span class="icon">🚀</span>
+                        <div>
+                            <h3>Cómo funciona - Paso 1</h3>
+                            <p>Elige tu cono trufado favorito desde nuestro catálogo con niveles y sabores únicos.</p>
+                        </div>
+                    </div>
+                
+                    <div class="caracteristica-item">
+                        <span class="icon">🚀</span>
+                        <div>
+                            <h3>Cómo funciona - Paso 2</h3>
+                            <p>Personalizamos tu pedido con el chocolate y rellenos que elijas, integrando el concepto de niveles para una experiencia única.</p>
+                        </div>
+                    </div>
+                
+                    <div class="caracteristica-item">
+                        <span class="icon">🚀</span>
+                        <div>
+                            <h3>Cómo funciona - Paso 3</h3>
+                            <p>Recibe tu cono en la puerta de tu casa, listo para disfrutar ese momento épico de dulzura y diversión.</p>
+                        </div>
+                    </div>
+                
+                    <div class="caracteristica-item">
+                        <span class="icon">🚀</span>
+                        <div>
+                            <h3>Garantía/Ventaja única</h3>
+                            <p>Si no te encanta el sabor y la textura, te devolvemos el 100% de tu dinero sin preguntas, ¡solo en Sugar Boom!</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
     
 
     <!-- 🗣️ TESTIMONIOS SECTION -->
     
+    <section class="testimonios">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-grid">
+                
+                    <div class="testimonio-item">
+                        <p class="quote">Nunca pensé que un postre pudiera hacerme sentir como en un juego. Los conos de Sugar Boom me llevaron a otro nivel, literalmente. ¡He comprado 5 veces en un mes!</p>
+                        <p class="author">Lucía Martínez</p>
+                        <p class="position">Fanática de postres gourmet</p>
+                    </div>
+                
+                    <div class="testimonio-item">
+                        <p class="quote">Soy amante de los videojuegos y estos conos trufados son mi dulce aliado para mis maratones. Sabor potente y texturas que sorprenden.</p>
+                        <p class="author">Carlos Gómez</p>
+                        <p class="position">Jugador profesional online</p>
+                    </div>
+                
+                    <div class="testimonio-item">
+                        <p class="quote">Perfecto para regalar y para compartir con amigos. Recibí muchos halagos por el empaque y el sabor exclusivo.</p>
+                        <p class="author">Ana Torres</p>
+                        <p class="position">Emprendedora foodie</p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
 
     <!-- ❓ FAQ SECTION -->
     
+    <section class="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(0)">
+                            <span>¿No soy un experto en videojuegos, puedo disfrutar los conos?</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer" id="faq-0">
+                            <p>¡Claro! Los niveles son solo una forma divertida de presentar los sabores, no necesitas experiencia gamer para disfrutar cada bocado.</p>
+                        </div>
+                    </div>
+                
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(1)">
+                            <span>¿Qué pasa si el cono no me gusta?</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer" id="faq-1">
+                            <p>Ofrecemos una garantía 100% de satisfacción o te devolvemos tu dinero sin preguntas, para que puedas comprar sin miedo.</p>
+                        </div>
+                    </div>
+                
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(2)">
+                            <span>¿Los conos contienen demasiadas calorías?</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer" id="faq-2">
+                            <p>Cada cono está balanceado con 250 calorías para que disfrutes sin culpas y mantengas energía para tu día.</p>
+                        </div>
+                    </div>
+                
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(3)">
+                            <span>¿Cuánto tarda el envío?</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer" id="faq-3">
+                            <p>Tu pedido llegará en menos de 48 horas con embalaje especial que mantiene la frescura y presentación de tu cono trufado.</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
 
     <!-- 🎯 CTA FINAL SECTION -->
-    <section class="cta-final scroll-animation" id="contact">
+    <section class="cta-final" id="contact">
         <div class="container">
-            <h2>¿Listo para comenzar?</h2>
-            <p>undefined</p>
-            <a href="mailto:undefined" class="cta-button">Contactar ahora</a>
-            
+            <h2>Reserva Ya, Hay Solo 50 Conos Nivel Pro Disponibles Esta Semana</h2>
+            <p>Disponibilidad limitada a 50 conos nivel pro por semana para mantener calidad premium y frescura única.</p>
+            <a href="mailto:aalvarezp@gmail.com" class="cta-button">¡Quiero Mi Cono Nivel Pro Ahora!</a>
+            <p style="margin-top: 30px; color: #ffb347; font-weight: 600;">🛡️ Garantía de satisfacción 100% o te devolvemos tu dinero sin preguntas para que compres con confianza absoluta.</p>
         </div>
     </section>
 
     <!-- 🔗 FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 undefined. Todos los derechos reservados.</p>
-            <p>Contacto: <a href="mailto:undefined">undefined</a></p>
-            
+            <p>&copy; 2025 Sugar Boom. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:aalvarezp@gmail.com">aalvarezp@gmail.com</a></p>
         </div>
     </footer>
 
@@ -702,73 +717,6 @@
                 }
             });
         });
-
-        // ✨ Scroll animations
-        function handleScrollAnimations() {
-            const elements = document.querySelectorAll('.scroll-animation');
-            const windowHeight = window.innerHeight;
-            
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    element.classList.add('active');
-                }
-            });
-        }
-
-        // 🎪 Initialize scroll animations
-        window.addEventListener('scroll', handleScrollAnimations);
-        window.addEventListener('load', handleScrollAnimations);
-        
-        // 🚀 Initialize on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            handleScrollAnimations();
-            
-            // Add loading animation to hero elements
-            const heroElements = document.querySelectorAll('.hero h1, .hero .subtitle, .hero .description, .hero .cta-button, .hero-image');
-            heroElements.forEach((element, index) => {
-                element.style.animationDelay = `${index * 0.2}s`;
-            });
-        });
-
-        // 📊 Simple analytics tracking (opcional)
-        function trackEvent(action, label) {
-            console.log(`Event tracked: ${action} - ${label}`);
-            // Aquí puedes integrar con Google Analytics, Facebook Pixel, etc.
-        }
-
-        // Track CTA clicks
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('click', () => {
-                trackEvent('CTA_Click', button.textContent.trim());
-            });
-        });
-
-        // Track FAQ interactions
-        window.toggleFAQ = function(index) {
-            const faqItem = document.querySelector(`.faq-item:nth-child(${index + 1})`);
-            const faqAnswer = document.getElementById(`faq-${index}`);
-            const question = faqItem.querySelector('.faq-question span').textContent;
-            
-            // Close all other FAQs
-            document.querySelectorAll('.faq-item').forEach((item, i) => {
-                if (i !== index) {
-                    item.classList.remove('active');
-                    const answer = document.getElementById(`faq-${i}`);
-                    if (answer) answer.classList.remove('active');
-                }
-            });
-            
-            // Toggle current FAQ
-            const isOpening = !faqItem.classList.contains('active');
-            faqItem.classList.toggle('active');
-            faqAnswer.classList.toggle('active');
-            
-            // Track FAQ interaction
-            trackEvent('FAQ_Toggle', question);
-        }
     </script>
 </body>
 </html>
